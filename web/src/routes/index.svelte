@@ -1,62 +1,189 @@
-<style>
-	h1, figure, p {
-		text-align: center;
-		margin: 0 auto;
-	}
-
-	h1 {
-		font-size: 2.8em;
-		text-transform: uppercase;
-		font-weight: 700;
-		margin: 0 0 0.5em 0;
-	}
-
-	figure {
-		margin: 0 0 1em 0;
-	}
-
-	svg {
-		width: 100%;
-		max-width: 400px;
-		margin: 0 0 1em 0;
-	}
-
-	p {
-		margin: 1em auto;
-	}
-
-	@media (min-width: 480px) {
-		h1 {
-			font-size: 4em;
-		}
-	}
-</style>
-
 <svelte:head>
-	<title>Sapper project template</title>
+    <title>Expat Expenses - Home</title>
 </svelte:head>
 
-<h1>Great success!</h1>
+<div class="hero">
+    <div class="pt-28 container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <div class="text-white text-5xl font-thin tracking-wide uppercase">
+            Expat finances
+        </div>
+        <div class="text-white text-5xl font-thin tracking-wide uppercase mt-3">
+            made easy
+        </div>
+        <div class="mt-10 max-w-xl my-0 mx-auto">
+            <form action="#" method="POST" class="space-y-6 grid grid-cols-3">
+                <div class="col-span-2">
+                    <div class="mb-4">
+                        <label for="name" class="sr-only">FULL NAME</label>
+                        <input
+                            type="text"
+                            name="name"
+                            id="name"
+                            autocomplete="name"
+                            placeholder="FULL NAME"
+                            required
+                            class="block w-10/12 border-b text-white placeholder-white bg-transparent focus:outline-none"
+                        />
+                    </div>
 
-<figure>
-	<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="svelte" x="0px" y="0px" viewBox="0 0 519 139" style="enable-background:new 0 0 519 139;" xml:space="preserve">
-<style type="text/css">
-	.st0{fill:#159497;}
-	.st1{fill:#FFFFFF;}
-	.st2{fill:#4A4A55;}
+                    <div>
+                        <label for="email" class="sr-only">APPLE ID EMAIL</label
+                        >
+                        <input
+                            type="text"
+                            name="email"
+                            id="email"
+                            autocomplete="email"
+                            placeholder="APPLE ID EMAIL"
+                            required
+                            class="block w-10/12 border-b bg-transparent text-white placeholder-white focus:outline-none"
+                        />
+                    </div>
+                </div>
+
+                <div class="col-span-1">
+                    <button
+                        type="submit"
+                        class="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-green-600 hover:bg-green-700 focus:outline-none">
+                        Sign Up For Beta
+                    </button>
+                </div>
+            </form>
+
+            <div class="mt-8 ">
+                <img
+                    src="homescreen.webp"
+                    alt="app homescreen image"
+                    class="h-96 my-0 mx-auto"
+                />
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- <div class="relative bg-gray-100 overflow-hidden">
+    <main class="mt-16 sm:mt-24 mb-10">
+        <div class="mx-auto max-w-7xl">
+            <div class="lg:grid lg:grid-cols-12 lg:gap-8">
+                <div
+                    class="px-4 sm:px-6 sm:text-center md:max-w-2xl md:mx-auto lg:col-span-6 lg:text-left lg:flex lg:items-center"
+                >
+                    <div>
+                        <h1
+                            class="mt-4 text-4xl tracking-tight font-extrabold sm:mt-5 sm:leading-none lg:mt-6 lg:text-5xl xl:text-6xl"
+                        >
+                            <span class="inline"
+                                >Expat personal finances made</span
+                            >
+                            <span class="text-green-400 inline">easy</span>
+                            <span class="inline">and</span>
+                            <span class="text-green-400 inline">secure</span>
+                        </h1>
+                        <p
+                            class="mt-3 text-base sm:mt-5 sm:text-xl lg:text-lg xl:text-xl"
+                        >
+                            Expat Expenses allows you to budget and track your
+                            incomes and expenses in whatever currency you like,
+                            completely securely, from any country in the world.
+                        </p>
+                        <p
+                            class="text-base sm:text-xl lg:text-lg xl:text-xl mt-4"
+                        >
+                            We're currently in beta,so if you'd like to help us
+                            out by testing the app, please sign up using the
+                            form here! We're currently texting on iOS devices
+                            but will open up beta testing to Android devices in
+                            the near future.
+                        </p>
+                    </div>
+                </div>
+                <div class="mt-16 sm:mt-24 lg:mt-16 lg:col-span-6">
+                    <div
+                        class="bg-white sm:max-w-md sm:w-full sm:mx-auto sm:rounded-lg sm:overflow-hidden"
+                    >
+                        <div class="px-4 py-8 sm:px-10">
+                            <div>
+                                <p
+                                    class="text-md font-medium text-gray-700 text-center"
+                                >Sign Up for the Beta:</p>
+                            </div>
+
+                            <div class="mt-6 relative">
+                                <div
+                                    class="absolute inset-0 flex items-center"
+                                    aria-hidden="true"
+                                >
+                                    <div
+                                        class="w-full border-t border-gray-300"
+                                    />
+                                </div>
+                                <div
+                                    class="relative flex justify-center text-sm"
+                                >
+                                    <span class="px-2 bg-white text-gray-500" />
+                                </div>
+                            </div>
+
+                            <div class="mt-6">
+                                <form
+                                    action="#"
+                                    method="POST"
+                                    class="space-y-6"
+                                >
+                                    <div>
+                                        <label for="name" class="sr-only"
+                                            >Full name</label
+                                        >
+                                        <input
+                                            type="text"
+                                            name="name"
+                                            id="name"
+                                            autocomplete="name"
+                                            placeholder="Full name"
+                                            required
+                                            class="block w-full shadow-sm focus:ring-green-500 focus:border-green-500 sm:text-sm border-gray-300 rounded-md"
+                                        />
+                                    </div>
+
+                                    <div>
+                                        <label for="email" class="sr-only"
+                                            >Apple ID Email</label
+                                        >
+                                        <input
+                                            type="text"
+                                            name="email"
+                                            id="email"
+                                            autocomplete="email"
+                                            placeholder="Apple ID Email"
+                                            required
+                                            class="block w-full shadow-sm focus:ring-green-500 focus:border-green-500 sm:text-sm border-gray-300 rounded-md"
+                                        />
+                                    </div>
+
+                                    <div>
+                                        <button
+                                            type="submit"
+                                            class="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-green-600 hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500">
+                                            Sign Up
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</div> -->
+<style>
+    .hero {
+        height: 700px;
+        background-color: white;
+        background-image: -webkit-linear-gradient(
+            -65deg,
+            #10b981 65%,
+            #fff 35%
+        );
+    }
 </style>
-<path id="back" class="st0" d="M110.2,28.4C99.8,13.5,79.3,9.1,64.4,18.6L38.4,35.2c-7.1,4.5-12,11.7-13.5,20  c-1.2,6.9-0.2,14,3.1,20.2c-2.2,3.4-3.8,7.2-4.5,11.2c-1.5,8.4,0.5,17.1,5.5,24.1c10.4,14.9,30.9,19.3,45.8,9.8l26.1-16.6  c7.1-4.5,12-11.7,13.5-20c1.2-6.9,0.1-14-3.1-20.2c2.2-3.4,3.8-7.2,4.5-11.2C117.2,44.1,115.2,35.5,110.2,28.4"/>
-<path id="front" class="st1" d="M61.9,112.2c-8.4,2.2-17.3-1.1-22.2-8.2c-3-4.2-4.2-9.4-3.3-14.5c0.1-0.8,0.4-1.6,0.6-2.4l0.5-1.5  l1.3,1c3.1,2.2,6.5,4,10.2,5.1l1,0.3l-0.1,1c-0.1,1.4,0.3,2.7,1.1,3.8c1.5,2.1,4.2,3.1,6.7,2.5c0.6-0.2,1.1-0.4,1.6-0.7l26-16.6  c1.3-0.8,2.2-2.1,2.4-3.6c0.3-1.5-0.1-3.1-1-4.4c-1.5-2.1-4.2-3.1-6.7-2.5c-0.6,0.2-1.1,0.4-1.6,0.7l-10,6.3c-1.6,1-3.4,1.8-5.3,2.3  c-8.4,2.2-17.3-1.1-22.2-8.2c-3-4.2-4.2-9.4-3.2-14.5c0.9-5,3.8-9.4,8.1-12.1L72,29.3c1.6-1,3.4-1.8,5.3-2.3  c8.4-2.2,17.3,1.1,22.2,8.2c3,4.2,4.2,9.4,3.3,14.5c-0.2,0.8-0.4,1.6-0.6,2.4l-0.5,1.5l-1.3-1c-3.1-2.3-6.5-4-10.2-5.1l-1-0.3l0.1-1  c0.1-1.4-0.3-2.8-1.1-3.9c-1.5-2.1-4.2-3.1-6.7-2.4c-0.6,0.2-1.1,0.4-1.6,0.7L53.8,57.3c-1.3,0.8-2.2,2.1-2.5,3.6  c-0.3,1.5,0.1,3.1,1,4.4c1.5,2.1,4.1,3.1,6.7,2.5c0.6-0.2,1.1-0.4,1.6-0.7l10-6.3c1.6-1,3.4-1.8,5.3-2.3c8.4-2.2,17.3,1.1,22.2,8.2  c3,4.2,4.2,9.4,3.3,14.5c-0.9,5-3.8,9.4-8.1,12.1l-26.1,16.6C65.6,110.9,63.8,111.7,61.9,112.2"/>
-<g>
-	<path class="st2" d="M150.8,85.9l8.3-3.1c2.5,5.4,7.3,9,13.7,9c6.5,0,10.8-3.2,10.8-9.2c0-6.5-6.5-8.8-13.5-11.2   c-8.3-3-17.4-6.2-17.4-17.1c0-8.4,6.9-15.6,19-15.6c10.1,0,16.4,5,18.4,11.8l-8.2,2.7c-1.4-3.4-5.1-6-10.9-6   c-5.7,0-9.1,2.6-9.1,7.2c0,4.9,5.5,6.8,12,9c8.6,3.2,18.8,6.8,18.8,19.2c0,11.4-8.9,17.8-20.4,17.8   C161.9,100.4,153.8,94.8,150.8,85.9z"/>
-	<path class="st2" d="M241,85.7h-24.1l-4.9,13.7h-9.2l21.5-59.6h9.1L255,99.4h-9.2L241,85.7z M231,57.6c-0.7-1.9-1.6-4.7-2-6.7   c-0.5,2-1.4,4.8-2,6.7l-7.3,20.3h18.6L231,57.6z"/>
-	<path class="st2" d="M268.3,39.8h23.9c14.6,0,19.7,9.3,19.7,18.2c0,8.3-5.5,18.2-19.7,18.2h-15.1v23.2h-8.9V39.8z M302.8,58   c0-4.2-2.1-9.7-10-9.7h-15.6v19.4h15.6C300.2,67.7,302.8,62.6,302.8,58z"/>
-	<path class="st2" d="M326,39.8h23.9c14.6,0,19.7,9.3,19.7,18.2c0,8.3-5.5,18.2-19.7,18.2h-15.1v23.2H326V39.8z M360.4,58   c0-4.2-2.1-9.7-10-9.7h-15.6v19.4h15.6C357.9,67.7,360.4,62.6,360.4,58z"/>
-	<path class="st2" d="M383.7,39.8h37v8.3h-28.1v16.4h18.1v8.3h-18.1V91h30v8.3h-38.8V39.8z"/>
-	<path class="st2" d="M438.7,39.8h25.1c14.6,0,19.2,8.7,19.2,17.6c0,6.9-3.8,14.5-12.9,16.9l12.3,25.1h-10.1L460.5,75h-12.9v24.4   h-8.9V39.8z M464,66.5c7.4,0,9.9-4.5,9.9-9.1c0-4.2-2-9.1-9.9-9.1h-16.4v18.2H464z"/>
-</g>
-</svg>
-	<figcaption>HIGH FIVE!</figcaption>
-</figure>
-
-<p><strong>Go to <a href="/blog">/blog</a> to see content loaded from <a href="https://www.sanity.io">Sanity</a></strong></p>
