@@ -79,6 +79,11 @@
                                 >
                                     <div class="sm:flex sm:ml-8 lg:ml-0">
                                         <div class="min-w-0 flex">
+                                            <input
+                                                type="hidden"
+                                                name="form-name"
+                                                value="beta signup"
+                                            />
                                             <label for="name" class="sr-only"
                                                 >Name</label
                                             >
