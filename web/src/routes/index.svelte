@@ -90,6 +90,7 @@
                                             <input
                                                 id="name"
                                                 type="text"
+                                                name="name"
                                                 placeholder="Enter your name"
                                                 bind:value={formData.name}
                                                 class="block px-4 py-3 rounded-md border-0 text-base text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-400 focus:ring-offset-gray-900"
@@ -100,6 +101,7 @@
                                             <input
                                                 id="email"
                                                 type="email"
+                                                name="email"
                                                 bind:value={formData.email}
                                                 placeholder="Enter your email"
                                                 class="block ml-3 px-4 py-3 rounded-md border-0 text-base text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-400 focus:ring-offset-gray-900"
