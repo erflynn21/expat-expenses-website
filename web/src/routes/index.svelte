@@ -1,4 +1,6 @@
 <script>
+    import { fade } from 'svelte/transition';
+
     let formData = {
         name: '',
         email: '',
@@ -21,7 +23,7 @@
         fetch('/', {
             method: 'POST',
             headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-            body: encode({ 'form-name': 'contact', ...formData }),
+            body: encode({ 'form-name': 'beta signup', ...formData }),
         })
             .then(() => (displaySuccess = true))
             .catch((error) => alert(error));
@@ -109,19 +111,6 @@
                                         </div>
                                     </div>
 
-                                    {#if displaySuccess === true}
-                                        <div
-                                            class="text-white text-center mt-4"
-                                        >
-                                            Thanks for signing up! We'll add you
-                                            to the beta testing group shortly.
-                                            In the meantime, please download the
-                                            TestFlight app from the App Store.
-                                            You'll need that to start using
-                                            Expat Expenses.
-                                        </div>
-                                    {/if}
-
                                     <p
                                         class="mt-3 text-sm text-gray-300 sm:mt-4 italic"
                                     >
@@ -131,6 +120,52 @@
                                         submit the email you use for your Apple
                                         ID above and we'll add you to the beta
                                         testing group.
+                                    </p>
+                                    {#if displaySuccess === true}
+                                        <div
+                                            class="text-white text-center mt-4"
+                                            in:fade|local={{ duration: 250 }}
+                                        >
+                                            Thanks for signing up! We'll add you
+                                            to the beta testing group shortly.
+                                            In the meantime, please download the
+                                            TestFlight app from the App Store.
+                                            You'll need that to start using
+                                            Expat Expenses.
+                                        </div>
+                                    {/if}
+                                </form>
+                                <form
+                                    class="honeypot"
+                                    name="contact"
+                                    method="POST"
+                                    netlify-honeypot="bot-field"
+                                    data-netlify="true"
+                                >
+                                    <p class="hidden">
+                                        <label
+                                            >Don’t fill this out if you're
+                                            human:
+                                            <input name="bot-field" /></label
+                                        >
+                                    </p>
+                                    <p class="hidden">
+                                        <label
+                                            >Email: <input
+                                                type="text"
+                                                name="email"
+                                            /></label
+                                        >
+                                    </p>
+                                    <p class="hidden">
+                                        <label
+                                            >Message: <textarea
+                                                name="message"
+                                            /></label
+                                        >
+                                    </p>
+                                    <p class="hidden">
+                                        <button type="submit">Send</button>
                                     </p>
                                 </form>
                             </div>
