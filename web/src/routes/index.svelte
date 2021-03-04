@@ -257,7 +257,7 @@
                                 <div class="-mt-6">
                                     <div>
                                         <span
-                                            class="inline-flex items-center justify-center p-3 bg-gradient-to-r from-teal-500 to-cyan-600 rounded-md shadow-lg"
+                                            class="inline-flex items-center justify-center p-3 bg-gradient-to-r from-green-400 to-green-600 rounded-md shadow-lg"
                                         >
                                             <!-- Heroicon name: outline/cloud-upload -->
                                             <svg
@@ -298,7 +298,7 @@
                                 <div class="-mt-6">
                                     <div>
                                         <span
-                                            class="inline-flex items-center justify-center p-3 bg-gradient-to-r from-teal-500 to-cyan-600 rounded-md shadow-lg"
+                                            class="inline-flex items-center justify-center p-3 bg-gradient-to-r from-green-400 to-green-600 rounded-md shadow-lg"
                                         >
                                             <!-- Heroicon name: outline/lock-closed -->
                                             <svg
@@ -338,7 +338,7 @@
                                 <div class="-mt-6">
                                     <div>
                                         <span
-                                            class="inline-flex items-center justify-center p-3 bg-gradient-to-r from-teal-500 to-cyan-600 rounded-md shadow-lg"
+                                            class="inline-flex items-center justify-center p-3 bg-gradient-to-r from-green-400 to-green-600 rounded-md shadow-lg"
                                         >
                                             <!-- Heroicon name: outline/refresh -->
                                             <svg
@@ -378,7 +378,7 @@
                                 <div class="-mt-6">
                                     <div>
                                         <span
-                                            class="inline-flex items-center justify-center p-3 bg-gradient-to-r from-teal-500 to-cyan-600 rounded-md shadow-lg"
+                                            class="inline-flex items-center justify-center p-3 bg-gradient-to-r from-green-400 to-green-600 rounded-md shadow-lg"
                                         >
                                             <!-- Heroicon name: outline/shield-check -->
                                             <svg
@@ -424,7 +424,7 @@
                                 <div class="-mt-6">
                                     <div>
                                         <span
-                                            class="inline-flex items-center justify-center p-3 bg-gradient-to-r from-teal-500 to-cyan-600 rounded-md shadow-lg"
+                                            class="inline-flex items-center justify-center p-3 bg-gradient-to-r from-green-400 to-green-600 rounded-md shadow-lg"
                                         >
                                             <!-- Heroicon name: outline/cog -->
                                             <svg
@@ -466,7 +466,7 @@
                                 <div class="-mt-6">
                                     <div>
                                         <span
-                                            class="inline-flex items-center justify-center p-3 bg-gradient-to-r from-teal-500 to-cyan-600 rounded-md shadow-lg"
+                                            class="inline-flex items-center justify-center p-3 bg-gradient-to-r from-green-400 to-green-600 rounded-md shadow-lg"
                                         >
                                             <!-- Heroicon name: outline/server -->
                                             <svg
