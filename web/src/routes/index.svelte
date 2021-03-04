@@ -84,7 +84,7 @@
                                                 name="form-name"
                                                 value="beta signup"
                                             />
-                                            <label for="name" class="sr-only"
+                                            <label for="name" class="hidden"
                                                 >Name</label
                                             >
                                             <input
@@ -94,7 +94,7 @@
                                                 bind:value={formData.name}
                                                 class="block px-4 py-3 rounded-md border-0 text-base text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-400 focus:ring-offset-gray-900"
                                             />
-                                            <label for="email" class="sr-only"
+                                            <label for="email" class="hidden"
                                                 >Email</label
                                             >
                                             <input
