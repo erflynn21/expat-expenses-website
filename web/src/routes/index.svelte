@@ -55,7 +55,7 @@
                             >
                                 <span class="block">Expat finances</span>
                                 <span
-                                    class="bg-clip-text text-transparent bg-gradient-to-r from-green-400 to-green-600"
+                                    class="bg-clip-text text-transparent bg-gradient-to-r from-green-600 to-green-400"
                                     >made easy</span
                                 >
                             </h1>
@@ -112,7 +112,7 @@
                                         >
                                             <button
                                                 type="submit"
-                                                class="block w-full py-3 px-4 rounded-md shadow bg-gradient-to-r from-green-400 to-green-600 text-white font-medium hover:from-green-600 hover:to-green-800 focus:outline-none"
+                                                class="block w-full py-3 px-4 rounded-md shadow bg-gradient-to-r from-green-600 to-green-400 text-white font-medium hover:from-green-800 hover:to-green-600 focus:outline-none"
                                                 >Sign Up</button
                                             >
                                         </div>
@@ -230,11 +230,11 @@
             <div
                 class="mx-auto max-w-md px-4 text-center sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl"
             >
-                <h2
-                    class="text-base font-semibold tracking-wider text-cyan-600 uppercase"
+                <span
+                    class="text-base font-semibold tracking-wider bg-clip-text text-transparent bg-gradient-to-r from-green-600 to-green-400 uppercase"
                 >
                     Budget Better
-                </h2>
+                </span>
                 <p
                     class="mt-2 text-3xl font-extrabold text-gray-900 tracking-tight sm:text-4xl"
                 >
@@ -257,7 +257,7 @@
                                 <div class="-mt-6">
                                     <div>
                                         <span
-                                            class="inline-flex items-center justify-center p-3 bg-gradient-to-r from-green-400 to-green-600 rounded-md shadow-lg"
+                                            class="inline-flex items-center justify-center p-3 bg-gradient-to-r from-green-600 to-green-400 rounded-md shadow-lg"
                                         >
                                             <!-- Heroicon name: outline/cloud-upload -->
                                             <svg
@@ -298,7 +298,7 @@
                                 <div class="-mt-6">
                                     <div>
                                         <span
-                                            class="inline-flex items-center justify-center p-3 bg-gradient-to-r from-green-400 to-green-600 rounded-md shadow-lg"
+                                            class="inline-flex items-center justify-center p-3 bg-gradient-to-r from-green-600 to-green-400 rounded-md shadow-lg"
                                         >
                                             <!-- Heroicon name: outline/lock-closed -->
                                             <svg
@@ -338,7 +338,7 @@
                                 <div class="-mt-6">
                                     <div>
                                         <span
-                                            class="inline-flex items-center justify-center p-3 bg-gradient-to-r from-green-400 to-green-600 rounded-md shadow-lg"
+                                            class="inline-flex items-center justify-center p-3 bg-gradient-to-r from-green-600 to-green-400 rounded-md shadow-lg"
                                         >
                                             <!-- Heroicon name: outline/refresh -->
                                             <svg
@@ -378,7 +378,7 @@
                                 <div class="-mt-6">
                                     <div>
                                         <span
-                                            class="inline-flex items-center justify-center p-3 bg-gradient-to-r from-green-400 to-green-600 rounded-md shadow-lg"
+                                            class="inline-flex items-center justify-center p-3 bg-gradient-to-r from-green-600 to-green-400 rounded-md shadow-lg"
                                         >
                                             <!-- Heroicon name: outline/shield-check -->
                                             <svg
@@ -424,7 +424,7 @@
                                 <div class="-mt-6">
                                     <div>
                                         <span
-                                            class="inline-flex items-center justify-center p-3 bg-gradient-to-r from-green-400 to-green-600 rounded-md shadow-lg"
+                                            class="inline-flex items-center justify-center p-3 bg-gradient-to-r from-green-600 to-green-400 rounded-md shadow-lg"
                                         >
                                             <!-- Heroicon name: outline/cog -->
                                             <svg
@@ -466,7 +466,7 @@
                                 <div class="-mt-6">
                                     <div>
                                         <span
-                                            class="inline-flex items-center justify-center p-3 bg-gradient-to-r from-green-400 to-green-600 rounded-md shadow-lg"
+                                            class="inline-flex items-center justify-center p-3 bg-gradient-to-r from-green-600 to-green-400 rounded-md shadow-lg"
                                         >
                                             <!-- Heroicon name: outline/server -->
                                             <svg
@@ -818,7 +818,7 @@
                 >
                     <span class="block">Ready to budget better?</span>
                     <span
-                        class="bg-clip-text text-transparent bg-gradient-to-r from-green-400 to-green-600"
+                        class="bg-clip-text text-transparent bg-gradient-to-r from-green-600 to-green-400"
                         >Sign up for the beta today.</span
                     >
                 </h2>
@@ -826,7 +826,7 @@
                 <div class="inline-flex rounded-md shadow mt-8">
                     <a
                         href="#hero"
-                        class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-gradient-to-r from-green-400 to-green-600 hover:bg-green-600"
+                        class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-gradient-to-r from-green-600 to-green-400 hover:from-green-800 hover:to-green-600"
                     >
                         Sign Up
                     </a>
